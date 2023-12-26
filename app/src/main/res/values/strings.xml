@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">proyecto_app</string>
+
+    <!--Login-->
+    <string name="log_title">Iniciar Sesión</string>
+    <string name="log_email">Usuario</string>
 </resources>
