@@ -5,8 +5,13 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.widget.Button;
+
+import com.example.proyecto_app.classes_alone.LoginService;
 
 public class LoginActivity extends AppCompatActivity {
+
+    Button btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,5 +23,12 @@ public class LoginActivity extends AppCompatActivity {
             AppCompatDelegate.setDefaultNightMode(
                     AppCompatDelegate.MODE_NIGHT_NO);
         }
+
+
+        btnLogin = findViewById(R.id.btnLogin);
+
+        btnLogin.setOnClickListener(view -> {
+            LoginService.Auth(this,"master","masterqwerty");
+        });
     }
 }
